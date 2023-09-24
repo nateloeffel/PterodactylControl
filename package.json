@@ -1,7 +1,7 @@
 {
-  "name": "basebot",
+  "name": "pterodactylcontroller",
   "version": "1.0.0",
-  "description": "Base discord bot.",
+  "description": "Pterodactyl Controller",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -12,9 +12,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nateloeffel/BaseDiscordBot/issues"
+    "url": "https://github.com/nateloeffel/PterodactylControl/issues"
   },
-  "homepage": "https://github.com/nateloeffel/BaseDiscordBot#readme",
+  "homepage": "https://github.com/nateloeffel/PterodactylControl#readme",
   "dependencies": {
     "discord.js": "^14.13.0",
     "dotenv": "^16.3.1"
