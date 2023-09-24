@@ -13,10 +13,11 @@ const {
 require("dotenv").config()
 
 const PTERODACTYL_API_KEY = process.env.PTERODACTYL_API_KEY
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName("create-link")
+		.setName("create-server")
 		.setDescription("Create a beaming link!")
 		.addStringOption((option) =>
 			option
@@ -66,7 +67,7 @@ module.exports = {
 				"USER_UPLOAD": "0",
 				"AUTO_UPDATE": "1",
 				"USERNAME": "nateloeffel",
-				"ACCESS_TOKEN": "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",
+				"ACCESS_TOKEN": GITHUB_TOKEN,
 				"MAIN_FILE": "index.js"
 			},
 			"limits": {
