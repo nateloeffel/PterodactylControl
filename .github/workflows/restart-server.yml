@@ -16,6 +16,8 @@ jobs:
     - name: Restart Server
       run: |
         curl -H "Authorization: Bearer ${{ secrets.PTERODACTYL_API_KEY }}" \
+             -H "Content-Type: application/json" \
+             -H "Accept: application/json" \
              -X POST \
              "${{ secrets.PTERODACTYL_API_URL }}/api/client/servers/4b1701e8/power" \
              -d '{"signal": "restart"}'
