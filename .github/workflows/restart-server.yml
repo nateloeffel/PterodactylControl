@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Debug Pterodactyl URL
+      run: echo "Pterodactyl URL is ${{ secrets.PTERODACTYL_API_URL }}"
+    
     - name: Restart Server
       run: |
         curl -H "Authorization: Bearer ${{ secrets.PTERODACTYL_API_KEY }}" \
