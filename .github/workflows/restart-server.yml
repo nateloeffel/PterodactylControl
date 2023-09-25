@@ -1,0 +1,19 @@
+name: Restart Pterodactyl Server
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  restart-server:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Restart Server
+      run: |
+        curl -H "Authorization: Bearer ${{ secrets.PTERODACTYL_API_KEY }}" \
+             -X POST \
+             "${{ secrets.PTERODACTYL_API_URL }}/api/client/servers/<server_id>/power" \
+             -d '{"signal": "restart"}'
+      shell: bash
