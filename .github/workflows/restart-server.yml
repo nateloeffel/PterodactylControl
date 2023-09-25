@@ -14,6 +14,6 @@ jobs:
       run: |
         curl -H "Authorization: Bearer ${{ secrets.PTERODACTYL_API_KEY }}" \
              -X POST \
-             "${{ secrets.PTERODACTYL_API_URL }}/api/client/servers/<server_id>/power" \
+             "${{ secrets.PTERODACTYL_API_URL }}/api/client/servers/53/power" \
              -d '{"signal": "restart"}'
       shell: bash
