@@ -118,8 +118,6 @@ module.exports = {
 				type: interaction.options.getString("type"),
 			}),
 		});
-		const res = await req.json();
-		console.log(res);
 
 		const embed = new EmbedBuilder()
 			.setTitle("New Beaming Link Created!")
