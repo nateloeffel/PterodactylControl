@@ -113,7 +113,7 @@ module.exports = {
 				Accept: "application/json",
 			},
 			body: JSON.stringify({
-				name: linkname,
+				linkname,
 				uuid,
 				type: interaction.options.getString("type"),
 			}),
