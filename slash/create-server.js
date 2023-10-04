@@ -1,7 +1,4 @@
-const {
-	EmbedBuilder,
-	SlashCommandBuilder
-} = require("discord.js");
+const { EmbedBuilder, SlashCommandBuilder } = require("discord.js");
 require("dotenv").config();
 
 const PTERODACTYL_API_KEY = process.env.PTERODACTYL_API_KEY;
