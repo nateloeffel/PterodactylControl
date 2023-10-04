@@ -1,14 +1,6 @@
 const {
 	EmbedBuilder,
-	ActionRowBuilder,
-	ButtonBuilder,
-	ButtonStyle,
-	TextInputBuilder,
-	ModalBuilder,
-	TextInputStyle,
-	InteractionType,
-	SlashCommandBuilder,
-	SelectMenuBuilder,
+	SlashCommandBuilder
 } = require("discord.js");
 require("dotenv").config();
 
